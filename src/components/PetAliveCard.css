@@ -1,0 +1,101 @@
+.pet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  justify-content: space-between;
+  height: 320px;
+  background-color: #ffe9c2;
+  border-radius: 20px;
+  border: 1px solid #ffe9c2;
+  box-shadow: 0px 0px 10px #3d3d3d;
+}
+
+.pet-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 20px;
+  background-color: #ffffff;
+  width: 220px;
+  height: 200px;
+  padding: 10px;
+}
+
+.icon {
+  font-size: 120px;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🩵</text></svg>")
+      16 0,
+    auto;
+}
+
+.name-alive {
+  font-size: 18px;
+}
+
+.hunger {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.love {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 40px;
+}
+
+meter {
+  font-size: 22px;
+}
+
+.hunger-meter::-webkit-meter-optimum-value {
+  background-color: red;
+}
+
+.love-meter::-webkit-meter-optimum-value {
+  background-color: #389bf3;
+}
+
+button {
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #389bf3;
+  box-shadow: #094c66 4px 4px 0px;
+  transition: transform 200ms, box-shadow 200ms;
+  padding: 5px;
+  color: black;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(4px) translateX(4px);
+  box-shadow: #094c66 0px 0px 0px;
+}
+
+.heart {
+  font-size: 22px;
+  border-radius: 50%;
+  padding-left: 4px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 2px #3d3d3d;
+  transition: transform 500ms;
+  transition-timing-function: cubic-bezier(0.75, -3, 0.25, 4);
+}
+
+.heart:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 400px) {
+  .pet {
+    margin-bottom: 20px;
+  }
+}

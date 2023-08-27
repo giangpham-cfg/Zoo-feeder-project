@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100%;
+  background: url("./assets/animal-background3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.game-container {
+  padding: 20px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1024px;
+  min-height: 650px;
+  margin: 0px auto;
+  gap: 35px;
+}
+
+.pets-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+#main-text {
+  color: transparent;
+  background: url(./assets/forest.jpeg);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 100px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+#intro {
+  text-align: center;
+  font-size: 14px;
+  color: #28283d;
+  width: 70%;
+  margin-top: -50px;
+}
+
+.quote {
+  font-size: 30px;
+}
+
+@media (max-width: 400px) {
+  .pets-container {
+    display: block;
+  }
+
+  #main-text {
+    font-size: 80px;
+  }
+}
