@@ -1,4 +1,4 @@
-# :🐍: Zoo Feeder App
+# 🐍 Zoo Feeder App
 
 ## :star: App Overview
 
